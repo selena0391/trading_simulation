@@ -18,7 +18,7 @@ def simulate():
 
     # Read the CSV file
     data = []
-    with open('/Users/ezequielesparza/trading_simulation/s&p500_data.csv', 'r') as csvfile:
+    with open('data/s&p500_data.csv', 'r') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             date = datetime.strptime(row['Date'], "%Y-%m-%d").date()
