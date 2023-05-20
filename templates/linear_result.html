@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Investment Growth Result</title>
+</head>
+<body>
+  <h1>Investment Growth Result</h1>
+  <div id="result">
+    <h2>Investment Growth:</h2>
+    <ul>
+      {% for item in result %}
+      <li>Date: {{ item.date }}, Value: ${{ item.value | round(2) }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
